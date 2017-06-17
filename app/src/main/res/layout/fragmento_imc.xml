@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_etiqueta_peso"/><!--Muestra una leyenda pidiendo el peso -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/campo_peso"/><!--cuadro de texto para ingresar el peso -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_etiqueta_estatura"/><!--Muestra una leyenda pidiendo la estatura -->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/campo_estatura"/><!-- cuadro de texto para ingresar la estatura -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_boton_calcular"
+            android:id="@+id/boton_calcular"/><!-- boton para calcular el IMC -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_boton_limpiar"
+            android:id="@+id/boton_limpiar"/><!--boton para limpiar los dos cuadros de texto-->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_etiqueta_resultado"/><!--Muestra la etiqueta de resultado-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etiqueta_imc"
+        android:text="0.0"/><!--Muestra el IMC despues de hace el cálculo-->
+
+</LinearLayout>
